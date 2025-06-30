@@ -1,0 +1,25 @@
+{
+    "name": "hexag",
+    "module": "index.ts",
+    "type": "module",
+    "private": true,
+    "scripts": {
+        "dev": "bun run --watch src/main.ts",
+        "build": "bun run prisma generate",
+        "start": "bun run src/main.ts",
+        "migrate": "bun run prisma migrate dev --name init",
+        "generate": "bun run prisma generate",
+        "studio": "bun run prisma studio"
+    },
+    "devDependencies": {
+        "typescript": "^5",
+        "prisma": "^6.10.1"
+    },
+    "peerDependencies": {
+        "@types/express": "^5.0.3",
+        "express": "^5.1.0"
+    },
+    "dependencies": {
+        "@prisma/client": "^6.10.1"
+    }
+}
