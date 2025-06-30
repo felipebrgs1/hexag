@@ -6,8 +6,8 @@ rodar com
 docker compose up 
 ```
 
-ou 
+ou para rodar o prisma studio
 
 ```bash
-docker compose up --profile tools up
+docker compose --profile tools up
 ``` 
