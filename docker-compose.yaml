@@ -34,7 +34,7 @@ services:
       - .:/app
     depends_on:
       - postgres
-    command: bun prisma studio --hostname 0.0.0.0
+    command: bun prisma studio --schema=src/infrastructure/db/prisma/schema.prisma
     profiles:
       - tools 
 

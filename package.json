@@ -5,21 +5,21 @@
     "private": true,
     "scripts": {
         "dev": "bun run --watch src/main.ts",
-        "build": "bun run prisma generate",
+        "build": "bun run prisma generate --schema=src/infrastructure/db/prisma/schema.prisma",
         "start": "bun run src/main.ts",
-        "migrate": "bun run prisma migrate dev --name init",
-        "generate": "bun run prisma generate",
-        "studio": "bun run prisma studio"
+        "migrate": "bun run prisma migrate dev --name init --schema=src/infrastructure/db/prisma/schema.prisma",
+        "generate": "bun run prisma generate --schema=src/infrastructure/db/prisma/schema.prisma",
+        "studio": "bun run prisma studio --schema=src/infrastructure/db/prisma/schema.prisma"
     },
     "devDependencies": {
-        "typescript": "^5",
-        "prisma": "^6.10.1"
+        "typescript": "^5.8",
+        "prisma": "^6.10"
     },
     "peerDependencies": {
-        "@types/express": "^5.0.3",
-        "express": "^5.1.0"
+        "@types/express": "^5.0",
+        "express": "^5.0"
     },
     "dependencies": {
-        "@prisma/client": "^6.10.1"
+        "@prisma/client": "^6.10"
     }
 }

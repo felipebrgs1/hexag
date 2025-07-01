@@ -19,7 +19,6 @@ COPY package.json bun.lock ./
 RUN bun install --production
 
 COPY --from=builder /app/src ./src
-COPY --from=builder /app/prisma ./prisma
 COPY --from=builder /app/tsconfig.json ./
 
 EXPOSE 3000

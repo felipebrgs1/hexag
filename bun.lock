@@ -4,15 +4,15 @@
     "": {
       "name": "hexag",
       "dependencies": {
-        "@prisma/client": "^6.10.1",
+        "@prisma/client": "^6.10",
       },
       "devDependencies": {
-        "prisma": "^6.10.1",
-        "typescript": "^5",
+        "prisma": "^6.10",
+        "typescript": "^5.8",
       },
       "peerDependencies": {
-        "@types/express": "^5.0.3",
-        "express": "^5.1.0",
+        "@types/express": "^5.0",
+        "express": "^5.0",
       },
     },
   },
